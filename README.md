@@ -1,4 +1,4 @@
-# Internship 
+# ML Internship 
 in Machine learning processes by smartknower and IIT Madras. 
 
 
