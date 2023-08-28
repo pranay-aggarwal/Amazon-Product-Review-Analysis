@@ -1,60 +1,43 @@
 # ML Internship 
 
-# Image Classifier for Cats and Dogs
+# Amazon Product Review Analysis
 
-This repository contains a machine learning project that implements an image classifier capable of distinguishing between images of cats and dogs. The classifier is built using the Python programming language and popular libraries like scikit-learn, streamlit, and pyngrok.
+This repository contains a Jupyter Notebook `Majorproject.ipynb` that performs an analysis of Amazon product reviews. The analysis focuses on extracting insights and information from customer reviews of a particular product.
 
 ## Project Overview
 
-The goal of this project is to develop an image classifier that can accurately identify whether an input image contains a cat or a dog. The project involves several steps, including data collection, preprocessing, model training, and building a user-friendly interface for making predictions.
+The goal of this project is to analyze customer reviews of a specific product listed on Amazon. The analysis covers various aspects, including sentiment analysis, word cloud visualization, feature extraction, and time-based analysis.
 
 ## Contents
 
-- `Minor_Project.ipynb`: This Jupyter Notebook contains the entire codebase of the project. It covers data collection using Bing Image Downloader, data preprocessing, model training using Support Vector Machines (SVM), and building a Streamlit web application for image classification.
-
-- `app.py`: This Python script implements the Streamlit web application. It allows users to upload an image and obtain predictions about whether the image contains a cat or a dog. The model's prediction probabilities for both classes are also displayed.
-
-- `img_model.p`: This is a pickle file that stores the trained SVM model. It is loaded by the Streamlit application for making predictions.
+- `Majorproject.ipynb`: This Jupyter Notebook contains the entire codebase of the project. It covers data collection through web scraping using Beautiful Soup, data preprocessing, sentiment analysis using the NLTK library's VADER sentiment analyzer, feature extraction using TF-IDF and Doc2Vec, visualization of word clouds, and time-based analysis of reviews.
 
 ## How to Use
 
 1. Clone the repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/your-username/Minor-Project.git
+   git clone https://github.com/your-username/Amazon-Review-Analysis.git
    ```
 
-2. Open the Jupyter Notebook `Minor_Project.ipynb` to explore the code and understand the project's implementation.
+2. Open the Jupyter Notebook `Majorproject.ipynb` to explore the code and understand the project's implementation.
 
 3. Install the required libraries using the following commands:
 
    ```bash
-   pip install bing_image_downloader
-   pip install streamlit
-   pip install pyngrok
+   pip install pandas numpy matplotlib seaborn nltk gensim wordcloud
    ```
 
-4. Run the Streamlit application using the following command:
+4. Run the code cells in the notebook to execute the analysis on Amazon product reviews. The notebook covers steps like web scraping, sentiment analysis, feature extraction, and visualization.
 
-   ```bash
-   streamlit run app.py
-   ```
+## Project Highlights
 
-   This will launch a web application where you can upload an image and receive predictions about whether it contains a cat or a dog.
-
-## Sample Images
-
-For testing the application, you can use the following sample images:
-
-- [Cat Image](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfx__RoRYzLDgXDiJxYGxLihJC4zoqV3V0xg&usqp=CAU.jpg)
-- [Dog Image](https://specials-images.forbesimg.com/imageserve/6082931ef598a85b055afe77/960x0.jpg?cropX1=0&cropX2=3475&cropY1=182&cropY2=2137.jpg)
+- Web scraping using Beautiful Soup to extract review data from Amazon product page.
+- Sentiment analysis using the VADER sentiment analyzer to categorize reviews as positive, negative, or neutral.
+- Word cloud visualization of frequently used words in both review titles and contents.
+- Feature extraction techniques such as TF-IDF and Doc2Vec to represent review texts.
+- Time-based analysis to explore trends and patterns in customer reviews over specific months and years.
 
 ## Acknowledgments
 
-This project is created by Pranay as a minor project. It utilizes various open-source libraries and resources, including Bing Image Downloader, scikit-learn, and Streamlit.
-
-Feel free to contribute, provide suggestions, and use this project for learning and experimenting with image classification techniques!
-
-
-
-
+This project is a demonstration of analyzing Amazon product reviews to gain insights into customer sentiment and preferences. It showcases various data analysis techniques using Python libraries such as NLTK, Beautiful Soup, and gensim. Feel free to explore, modify, and learn from this project for your own analysis tasks!
