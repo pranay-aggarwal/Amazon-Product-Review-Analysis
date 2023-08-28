@@ -40,4 +40,4 @@ The goal of this project is to analyze customer reviews of a specific product li
 
 ## Acknowledgments
 
-This project is a demonstration of analyzing Amazon product reviews to gain insights into customer sentiment and preferences. It showcases various data analysis techniques using Python libraries such as NLTK, Beautiful Soup, and gensim. Feel free to explore, modify, and learn from this project for your own analysis tasks!
+This project is a demonstration of analyzing Amazon product reviews to gain insights into customer sentiment and preferences. It showcases various data analysis techniques using Python libraries such as NLTK, Beautiful Soup, and gensim. 
